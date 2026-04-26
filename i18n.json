@@ -1,0 +1,10 @@
+{
+  "unsupported_platform": {
+    "en": "Unsupported Platform",
+    "zh": "不支持的平台"
+  },
+  "missing_url": {
+    "en": "Missing URL",
+    "zh": "缺少 URL"
+  }
+}

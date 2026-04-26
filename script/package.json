@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "scripts": {
+    "build:surge:dev": "rspack build --mode=development",
+    "build:surge:prod": "rspack build --mode=production"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "git:reset": "git reset --soft HEAD~1",
+    "build:dev": "rspack build --mode=development",
+    "build:prod": "rspack build --mode=production",
+    "vercel:dev": "bunx vercel dev --listen 8787",
+    "vercel:deploy": "bunx vercel deploy --prod",
+    "wrangler:dev": "bunx wrangler dev",
+    "wrangler:deploy": "bunx wrangler deploy --minify"
+  },
+  "dependencies": {
+    "@rspack/cli": "^2.0.0",
+    "hono": "^4.10.6"
+  }
+}
