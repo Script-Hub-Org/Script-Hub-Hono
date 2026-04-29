@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "scripts": {
+    "build:dev": "rspack build --mode=development",
+    "build:prod": "rspack build --mode=production"
+  }
+}

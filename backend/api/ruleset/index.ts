@@ -1,7 +1,7 @@
 import { Hono } from "hono/tiny";
-import { getPlatformFromUserAgent } from "../../../util/getPlatform.ts";
+import { getPlatformFromUserAgent } from "../../util/getPlatform";
 import { missing_url, unsupported_platform } from "../../../i18n.json";
-import { parse, stringify } from "./parser.ts";
+import { parse, stringify } from "./parser";
 
 export default new Hono().get("/:platform?", async (c) => {
   // @ts-ignore

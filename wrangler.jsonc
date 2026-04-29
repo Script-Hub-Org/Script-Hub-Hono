@@ -1,6 +1,6 @@
 {
   "name": "script-hub",
-  "main": "src/index.ts",
+  "main": "backend/index.ts",
   "compatibility_date": "2025-11-21",
   "compatibility_flags": ["nodejs_compat"],
   "assets": { "directory": "assets" },

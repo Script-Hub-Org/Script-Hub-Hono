@@ -1,4 +1,4 @@
-import { $app } from "../app.js";
+import { $app } from "../env/app";
 
 export class KV {
   async get(key: string) {

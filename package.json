@@ -2,8 +2,6 @@
   "type": "module",
   "scripts": {
     "git:reset": "git reset --soft HEAD~1",
-    "build:dev": "rspack build --mode=development",
-    "build:prod": "rspack build --mode=production",
     "vercel:dev": "bunx vercel dev --listen 8787",
     "vercel:deploy": "bunx vercel deploy --prod",
     "wrangler:dev": "bunx wrangler dev",

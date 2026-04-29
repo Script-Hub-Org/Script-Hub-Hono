@@ -10,21 +10,6 @@ export default (env, argv) => {
     experiments: {
       outputModule: true,
     },
-    output: {
-      filename: `Script.Hub.js`,
-      iife: false,
-      library: {
-        type: "module",
-      },
-      path:
-        argv.mode === "development"
-          ? path.join(
-              os.homedir(),
-              "Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/Script",
-            )
-          : path.resolve(import.meta.dirname, "../assets/script"),
-    },
-    // TypeScript Config
     module: {
       rules: [
         {
@@ -37,6 +22,23 @@ export default (env, argv) => {
           type: "javascript/auto",
         },
       ],
+    },
+    output: {
+      filename: `Script.Hub.js`,
+      iife: false,
+      library: {
+        type: "module",
+      },
+      path:
+        argv.mode === "development"
+          ? path.join(
+              os.homedir(),
+              "Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/Script",
+            )
+          : path.resolve(import.meta.dirname, "../../assets/script"),
+    },
+    resolve: {
+      extensions: [".js", ".json", ".ts"],
     },
   };
 };

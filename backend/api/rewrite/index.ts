@@ -1,6 +1,6 @@
 import { Hono } from "hono/tiny";
 import { unsupported_platform } from "../../../i18n.json";
-import { getPlatformFromUserAgent } from "../../../util/getPlatform.ts";
+import { getPlatformFromUserAgent } from "../../util/getPlatform";
 
 export default new Hono().get("/:title/:platform?", (c) => {
   const { title, platform } = c.req.param();

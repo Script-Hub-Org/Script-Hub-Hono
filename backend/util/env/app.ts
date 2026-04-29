@@ -1,7 +1,7 @@
 /**
  * https://github.com/NSNanoCat/util/blob/main/lib/app.mjs
  */
-import type { App } from "../types/app";
+import type { App } from "../../types/app";
 
 export const $app: App = (() => {
   const has = (key: string) => key in globalThis;

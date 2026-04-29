@@ -1,4 +1,4 @@
-import app from "../src/index.ts";
+import app from "../index.ts";
 
 (async () => {
   $done(
