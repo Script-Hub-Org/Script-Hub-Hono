@@ -1,8 +1,8 @@
 import { Hono } from "hono/tiny";
 import { languageDetector } from "hono/language";
 
-import rewrite from "./rewrite/index.ts";
-import ruleset from "./ruleset/index.ts";
+import rewrite from "./rewrite/index.js";
+import ruleset from "./ruleset/index.js";
 
 export default new Hono()
   .get("/", (c) => c.text("OK"))
@@ -13,6 +13,6 @@ export default new Hono()
       supportedLanguages: ["en", "zh"],
       fallbackLanguage: "en",
     }),
-  )
-  .route("/rewrite", rewrite)
-  .route("/ruleset", ruleset);
+  );
+// .route("/rewrite", rewrite)
+// .route("/ruleset", ruleset);

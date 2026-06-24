@@ -6,3 +6,8 @@ node_modules
 
 .vercel
 .wrangler
+
+assets/index.html
+assets/vite.svg
+
+.env*

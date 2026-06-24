@@ -2,13 +2,18 @@
   "type": "module",
   "scripts": {
     "git:reset": "git reset --soft HEAD~1",
+    "pages:dev": "bunx wrangler pages dev --port 8787",
+    "pages:deploy": "bunx wrangler pages deploy --project-name script-hub-hono",
+    "workers:dev": "bunx wrangler dev -c wrangler.workers.jsonc",
+    "workers:deploy": "bunx wrangler deploy --minify -c wrangler.workers.jsonc",
     "vercel:dev": "bunx vercel dev --listen 8787",
-    "vercel:deploy": "bunx vercel deploy --prod",
-    "wrangler:dev": "bunx wrangler dev",
-    "wrangler:deploy": "bunx wrangler deploy --minify"
+    "vercel:deploy": "bunx vercel deploy --prod"
   },
   "dependencies": {
-    "@rspack/cli": "^2.0.0",
+    "@vercel/config": "^0.5.4",
     "hono": "^4.10.6"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
   }
 }

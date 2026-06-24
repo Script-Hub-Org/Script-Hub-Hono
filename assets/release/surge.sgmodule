@@ -1,0 +1,9 @@
+#!name=Script Hub: 重写 & 规则集转换
+#!desc=http://script.hub
+#!category=Tool
+
+[Script]
+Script.Hub = type=http-request, pattern=^https?:\/\/script\.hub, timeout=15, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub-Hono/main/assets/release/script/Script.Hub.js
+
+[MITM]
+hostname = %APPEND% script.hub
